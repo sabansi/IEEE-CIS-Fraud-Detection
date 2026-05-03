@@ -60,7 +60,7 @@ Fraud ტრანზაქციები განსხვავებულ 
 
 ### 4. დროის პატერნები
 
-Transaction Hour და Day ანალიზი გვიჩვენებს, რომ fraud ტრანზაქციები ღამით (0-5 სთ) ოდნავ მაღალი სიხშირით ხდება.
+Transaction Hour და Day ანალიზი გვიჩვენებს, რომ fraud ტრანზაქციები ღამით ოდნავ მაღალი სიხშირით ხდება.
 
 <img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/1b8bf5d3-c95f-4a1a-9ec3-c396cb042a29" />
 
