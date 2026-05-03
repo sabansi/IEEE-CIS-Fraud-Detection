@@ -39,7 +39,8 @@ IEEE-CIS-Fraud-Detection/
 
 მონაცემები არაა ბალანსირებული, ანუ fraud ტრანზაქციები მთლიანი მონაცემების მხოლოდ ~3.5%-ს შეადგენს.
 
-![class_distribution](images/class_distribution.png)
+<img width="490" height="390" alt="image" src="https://github.com/user-attachments/assets/8efcff49-5ba3-4732-aa46-2139136254e0" />
+
 
 ამ პრობლემის გადასაჭრელად გამოვიყენე `scale_pos_weight=27.58`.
 
@@ -47,19 +48,21 @@ IEEE-CIS-Fraud-Detection/
 
 Raw TransactionAmt skewed-ია. log1p ტრანსფორმაციის შემდეგ განაწილება უფრო ნორმალური ხდება.
 
-![transaction_amt](images/transaction_amt.png)
+<img width="1189" height="390" alt="image" src="https://github.com/user-attachments/assets/15a82095-ff03-4602-b2f8-937e8f282806" />
+
 
 ### 3. TransactionAmt — Legit vs Fraud
 
 Fraud ტრანზაქციები განსხვავებულ განაწილებას აჩვენებს legit-თან შედარებით, კერძოდ fraud-ებს მეტად გაფანტული თანხები აქვთ.
 
-![amt_legit_fraud](images/amt_legit_fraud.png)
+<img width="1189" height="390" alt="image" src="https://github.com/user-attachments/assets/f703f613-18dd-49ac-bfd0-fc7ff86e68d5" />
+
 
 ### 4. დროის პატერნები
 
 Transaction Hour და Day ანალიზი გვიჩვენებს, რომ fraud ტრანზაქციები ღამით (0-5 სთ) ოდნავ მაღალი სიხშირით ხდება.
 
-![time_patterns](images/time_patterns.png)
+<img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/1b8bf5d3-c95f-4a1a-9ec3-c396cb042a29" />
 
 ### 5. Fraud Rate კატეგორიული სვეტებით
 
@@ -68,13 +71,15 @@ Transaction Hour და Day ანალიზი გვიჩვენებს
 - **card6=credit** გაცილებით სარისკოა debit-ზე (~7% vs ~2.5%)
 - **P_emaildomain=protonmail.com** ყველაზე მაღალი fraud rate-ით (~40%)
 
-![fraud_rates](images/fraud_rates.png)
+<img width="1568" height="342" alt="image" src="https://github.com/user-attachments/assets/237e53c8-2360-464d-af0e-ce6d072e2a22" />
+
 
 ### 6. Missing Values
 
 მრავალი სვეტი 85%+ missing values-ს შეიცავს.
 
-![missing_values](images/missing_values.png)
+<img width="1389" height="490" alt="image" src="https://github.com/user-attachments/assets/26b9d477-d36d-4653-bdba-d50347fa8f42" />
+
 
 ---
 
@@ -253,6 +258,11 @@ XGBoost-ზე დალოგილია საკმაოდ ბევრი
 ---
 
 ## Kaggle შედეგები
+Private Score:
+<img width="692" height="70" alt="image" src="https://github.com/user-attachments/assets/f2f45460-72d3-4839-a836-90f755f08384" />
+
+Public Score:
+<img width="687" height="73" alt="image" src="https://github.com/user-attachments/assets/977d24b5-84ca-4e15-8228-9027362c0661" />
 
 
 ---
